@@ -1,7 +1,5 @@
-<aura:component implements="flexipage:availableForAllPageTypes">
-        
+<aura:component implements="flexipage:availableForAllPageTypes">        
     <div class="slds-p-around_small">
-        Hello this change San!
-    </div>
-    
+        Hello - this test change San!
+    </div>    
 </aura:component>
