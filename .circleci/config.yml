@@ -43,7 +43,7 @@ jobs:
           command: |
               node_modules/sfdx-cli/bin/run force:auth:sfdxurl:store -f assets/sfdxurl.txt -d -a HubOrg  --setdefaultdevhubusername 
               node_modules/sfdx-cli/bin/run --help
-              node_modules/sfdx-cli/bin/run force:org:create -s -f config/project-scratch-def.json -a scratch -d 1 --setdefaultusername --wait 2
+              node_modules/sfdx-cli/bin/run force:org:create -s -f config/project-scratch-def.json -a scratch -d 1 --setdefaultusername
       - run:
             name: Install Lightning Testing Service
             command: |
