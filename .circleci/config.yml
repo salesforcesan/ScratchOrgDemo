@@ -68,6 +68,16 @@ jobs:
           command: |
              node_modules/sfdx-cli/bin/run force:source:push -u scratch --forceoverwrite
              node_modules/sfdx-cli/bin/run force:user:permset:assign --permsetname dreamhouse --targetusername salesforce.san@gmail.com
+  deploy_data:
+  # This deploys the source to the ci scratch org.
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: load data
+          command: |
+             node_modules/sfdx-cli/bin/run sfdx force:data:tree:import --plan data/brokers-data.json
   create_and_test_package:
     <<: *defaults
     steps:
