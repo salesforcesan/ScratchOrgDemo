@@ -1,0 +1,10 @@
+[
+    {
+        "sobject": "Broker__c",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "brokers-data.json"
+        ]
+    }
+]
