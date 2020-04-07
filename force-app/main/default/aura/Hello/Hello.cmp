@@ -1,5 +1,5 @@
 <aura:component implements="flexipage:availableForAllPageTypes">        
     <div class="slds-p-around_small">
-        Hello San
+        Hello Sankar
     </div>    
 </aura:component>
