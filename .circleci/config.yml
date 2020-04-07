@@ -84,7 +84,7 @@ jobs:
       - run:
           name: Load Data
           command: |
-            node_modules/sfdx-cli/bin/run force:data:tree:import --plan data/export-demo-Broker__c-plan.json
+            # node_modules/sfdx-cli/bin/run force:data:tree:import --plan data/export-demo-Broker__c-plan.json
   run_apex_tests:
     <<: *defaults
     steps:
